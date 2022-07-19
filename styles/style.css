@@ -20,9 +20,6 @@ textarea {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-body {
-  background-color: #1a1a1a;
-}
 /* Cabecalho */
 .cabecalho .container {
 width: auto;
@@ -66,35 +63,41 @@ main .container-titulo h1 {
 }
 
 /* Imagem */
-.container-img {
-  width: 100%;
+.container {
+  max-width: 100%;
 }
-.container-img img {
-  float: left;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+.container-img {
+  display: flex;
+  justify-content: center;
 }
 
-/* Modulo Sobre */
+.container-img img{
+width: 100%;
+}
+
+/* Página Inicial */
 .modulo {
   width: 100%;
   padding: 50px 0;
   color: rgb(255, 255, 255);
   padding: 15px 2px;
 }
-.projeto {
+.container-projeto {
   background-color: #220031;
+  color:rgb(255, 255, 255);
   text-align: justify;
   font-size: 20px;
+  padding: 10px;
 }
+
 .container-sub {
   background-color: #fff;
   color:#1a1a1a;
   font-size: 40px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .container-btn {
@@ -121,33 +124,19 @@ main .container-titulo h1 {
   font-size: 20px;
 }
 
-/* Modulo Tabela */
-.tabela {
-  width: 100%;
-  border-collapse: collapse;
-}
-.tabela thead {
-  background-color: #333;
-  color: #fff;
-}
-.tabela td {
-  border: 1px solid #333;
-  padding: 7px;
-}
+/* Galeria */
 
-/* Modulo Locais Interesse */
-.lista-locais ul {
+.container-galeria {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: stretch;
+  background-color: #220031;
 }
-.lista-locais ul li {
-  list-style: none;
-  display: inline-block;
-  color: #fff;
-  background: #fff;
-  padding: 7px 12px;
-  margin: 0 3px;
-  border-radius: 5px;
+.container-card{
+  color:#000000;
+  font-size: 17px;
 }
 
 /* Rodapé */
@@ -167,29 +156,17 @@ main .container-titulo h1 {
   color: #fff;
 }
 
-.mapa {
-  width: 100%;
-}
-.mapa img {
-  float: left;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+.contato-background {
+  background-color: #b769c7;
 }
 
-.notaveis {
-  float: left;
-}
-.notaveis ol {
-  font-size: 22px;
-  float: left;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.sugestao-texto {
+.contato-texto {
   text-align: center;
+  font-size: 21px;
+}
+
+.container-contato {
+  margin-top: 50px;
 }
 
 .form-container {
@@ -212,5 +189,22 @@ main .container-titulo h1 {
   transition: transform .3s;
 }
 .form-botao:hover {
-  background-color: #4f0072;
+  background-color: #2b003d;
 }
+
+.container-btn-contato {
+  display: flex;
+  justify-content: space-around;
+}
+.btn-contato {
+  padding: 15px 30px;
+  background-color: #4f0072;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  transition: transform .3s;
+  }
+
+  .btn-contato:hover {
+    background-color: #2b003d;
+  }

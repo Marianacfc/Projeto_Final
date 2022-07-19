@@ -22,7 +22,7 @@
       <div class="container-cabecalho">
         <div class="logo">
           <a href="./paginainicial.html">
-            <img src="./assets/" alt="" />
+            <img src="./assets/logo_cabecalho.png" alt="" />
           </a>
         </div>
 
@@ -37,19 +37,73 @@
     </header>
 
     <main>
+      <div class="contato-background">
       <div class="container-titulo">
         <h1>Who is MC - Blog</h1>
       </div>
     </header>
 
-            <div class="form-container">
-              <!-- todo formulario usa um input type submit como botão -->
-              <input type="submit" class="form-botao" value="Enviar" />
-            </div>
-          </form>
+    <div class="contato-texto">
+      <div class="container">
+        <p>O que achou dos desenhos expostos aqui? 
+          Acha que alguma ilustração das minhas redes sociais merece
+        estar aqui também? Ou só quer enviar uma mensagem?
+        Faça contato comigo pelas redes socias!</p>
+      </div>
+    </div>
+    
+    <div class="container-btn">
+      <button class="btn-saiba-mais">
+        <a href="https://www.instagram.com/who_is_m_c/">
+          Pelo Instagram
+        </a>
+      </button>
+      <button class="btn-saiba-mais">
+        <a href="https://www.reddit.com/user/m_carolina/?sort=top">
+          Pelo Reddit
+        </a>
+      </button>
+    </div>
+
+    <div class="container-contato">
+    <div class="contato-texto">
+      <div class="container">
+        <p>Ou se preferir, mande uma mensagem por aqui mesmo!
+        </p>
+      </div>
+    </div>
+    <div class="contato-formulario">
+      <div class="container">
+        <form method="POST">
+          <div class="form-container">
+            <label for="nome">Nome ou Apelido:</label><br />
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              class="form"
+              placeholder="Insira seu nome ou apelido (username)"
+              required
+            />
+          </div>
+          <div class="form-container">
+            <label for="mensagem">Digite sua mensagem:</label> <br />
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              rows="10"
+              class="form"
+              required
+            ></textarea>
+          </div>
+        </form>
+        <button type="button" class="btn btn-light" onclick="enviar()">Enviar</button>
         </div>
       </div>
-    </main>
+    </div>
+  </div>
+</div>
+  </main>
 
     <footer class="rodape">
       <div class="container">
@@ -67,5 +121,7 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"> 
+    </script>
   </body>
 </html>

@@ -130,13 +130,18 @@ width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-content: stretch;
-  align-items: stretch;
+  /* align-content: stretch;
+  align-items: stretch; */
   background-color: #220031;
 }
 .container-card{
   color:#000000;
   font-size: 17px;
+}
+
+.card {
+  min-height: 580px;
+
 }
 
 /* Rodapé */
